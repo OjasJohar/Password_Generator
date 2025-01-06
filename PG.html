@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGenerator</title>
+    <link rel="stylesheet" href="PG.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PASSWORD GENERATOR</h1>
+
+        <div class="dc">
+         <input readonly placeholder="Password" class="display" data-passwordDisplay>
+         <button data-copy>
+            <span data-copyMsg></span>
+            <input type="button">Copy
+         </button>
+        </div>
+
+        <div class="ic">
+
+        <div class="lc">
+            <p>Password Length</p>
+            <p data-lengthNumber>0</p>
+        </div>
+
+        <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+        <div class="check">
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Includes uppercase Letters</label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Includes lowercase Letters</label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="numbers">
+            <label for="numbers">Includes Numbers</label>
+        </div>
+        <div class="check">
+            <input type="checkbox" id="symbols">
+            <label for="symbols">Includes Symbols</label>
+        </div>
+
+        <div class="strength">
+            <p>Strength</p>
+            <div class="indicator" data-indicator></div>
+        </div>
+
+        <button class="generateB">GENERATE PASSWORD</button>
+
+        </div>
+
+    </div>
+    <script src="PG.js"></script>
+</body>
+</html>
